@@ -1,0 +1,35 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{The same models (scarce class kept at 20\% in training, IID, no attacker) scored as if the scarce class made up 5\%, 20\%, 50\% or 70\% of the test set, the other classes sharing the rest equally. Minority recall does not change with this share. Acc.: overall accuracy. Prec.: minority-class precision. Mean $\pm$ sample standard deviation over five seeds. Computed from each run's confusion matrix.}
+\label{tab:priorshift}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+ & \multicolumn{2}{c}{5\% of test} & \multicolumn{2}{c}{20\% of test} & \multicolumn{2}{c}{50\% of test} & \multicolumn{2}{c}{70\% of test} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9}
+Method & Acc. & Prec. & Acc. & Prec. & Acc. & Prec. & Acc. & Prec. \\
+\midrule
+\multicolumn{9}{l}{\textit{MNIST (scarce class: digit 8)}} \\
+Plain SFL & -- & -- & -- & -- & -- & -- & -- & -- \\
+LA loss & -- & -- & -- & -- & -- & -- & -- & -- \\
+CB loss & -- & -- & -- & -- & -- & -- & -- & -- \\
+LA loss + EWC & -- & -- & -- & -- & -- & -- & -- & -- \\
+\textbf{TrustFLaaS} & -- & -- & -- & -- & -- & -- & -- & -- \\
+\midrule
+\multicolumn{9}{l}{\textit{F-MNIST (scarce class: shirt)}} \\
+Plain SFL & -- & -- & -- & -- & -- & -- & -- & -- \\
+LA loss & -- & -- & -- & -- & -- & -- & -- & -- \\
+CB loss & -- & -- & -- & -- & -- & -- & -- & -- \\
+LA loss + EWC & -- & -- & -- & -- & -- & -- & -- & -- \\
+\textbf{TrustFLaaS} & -- & -- & -- & -- & -- & -- & -- & -- \\
+\midrule
+\multicolumn{9}{l}{\textit{CIFAR-10 (scarce class: frog)}} \\
+Plain SFL & -- & -- & -- & -- & -- & -- & -- & -- \\
+LA loss & -- & -- & -- & -- & -- & -- & -- & -- \\
+CB loss & -- & -- & -- & -- & -- & -- & -- & -- \\
+LA loss + EWC & -- & -- & -- & -- & -- & -- & -- & -- \\
+\textbf{TrustFLaaS} & -- & -- & -- & -- & -- & -- & -- & -- \\
+\bottomrule
+\end{tabular}
+\end{table*}

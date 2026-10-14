@@ -1,0 +1,17 @@
+# Pinned to versions verified to work together (smoke-tested end-to-end:
+# FedAvg + DP-SGD + centralized eval). Install with:
+#   pip install -r requirements.txt
+#
+# NOTE ON TORCH: this pulls a CUDA-enabled build from PyPI. If you have a
+# specific CUDA toolkit version (e.g. matching your RTX 3090 driver) or want
+# a CPU-only build, install torch/torchvision separately first from
+# https://pytorch.org/get-started/locally/ using the command it generates
+# for your system, THEN run `pip install -r requirements.txt` — pip will see
+# the requirement is already satisfied and skip reinstalling it (as long as
+# the version you installed is >= the pin below).
+
+torch==2.13.0
+torchvision==0.28.0
+flwr[simulation]==1.32.1
+opacus==1.6.0
+numpy==2.4.4

@@ -1,0 +1,35 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{Effect of how much of the scarce class is kept in training (20\%, 50\%, 70\%, 100\% of its original size), IID partition, no attacker, mean $\pm$ sample standard deviation over five seeds. Acc.: accuracy on the full, unsubsampled test set. Min.: accuracy on the minority class alone (its recall). LA: logit-adjusted. CB: class-balanced. Bold: best mean in that column among the compared methods, excluding plain SFL.}
+\label{tab:keepfrac}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+ & \multicolumn{2}{c}{20\% kept} & \multicolumn{2}{c}{50\% kept} & \multicolumn{2}{c}{70\% kept} & \multicolumn{2}{c}{100\% kept} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9}
+Method & Acc. & Min. & Acc. & Min. & Acc. & Min. & Acc. & Min. \\
+\midrule
+\multicolumn{9}{l}{\textit{MNIST (scarce class: digit 8)}} \\
+Plain SFL & -- & -- & -- & -- & -- & -- & -- & -- \\
+LA loss & -- & -- & -- & -- & -- & -- & -- & -- \\
+CB loss & -- & -- & -- & -- & -- & -- & -- & -- \\
+LA loss + EWC & -- & -- & -- & -- & -- & -- & -- & -- \\
+\textbf{TrustFLaaS} & -- & -- & -- & -- & -- & -- & -- & -- \\
+\midrule
+\multicolumn{9}{l}{\textit{F-MNIST (scarce class: shirt)}} \\
+Plain SFL & -- & -- & -- & -- & -- & -- & -- & -- \\
+LA loss & -- & -- & -- & -- & -- & -- & -- & -- \\
+CB loss & -- & -- & -- & -- & -- & -- & -- & -- \\
+LA loss + EWC & -- & -- & -- & -- & -- & -- & -- & -- \\
+\textbf{TrustFLaaS} & -- & -- & -- & -- & -- & -- & -- & -- \\
+\midrule
+\multicolumn{9}{l}{\textit{CIFAR-10 (scarce class: frog)}} \\
+Plain SFL & -- & -- & -- & -- & -- & -- & -- & -- \\
+LA loss & -- & -- & -- & -- & -- & -- & -- & -- \\
+CB loss & -- & -- & -- & -- & -- & -- & -- & -- \\
+LA loss + EWC & -- & -- & -- & -- & -- & -- & -- & -- \\
+\textbf{TrustFLaaS} & -- & -- & -- & -- & -- & -- & -- & -- \\
+\bottomrule
+\end{tabular}
+\end{table*}
