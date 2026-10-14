@@ -14,7 +14,7 @@ Code for the paper *TrustFLaaS: Self-Healing FLaaS Against Poisoning Attacks for
 | `analysis/` | Offline detector and smashed-data analyses. |
 | `results_summary/` | The summary CSVs behind the paper's tables. |
 
-The raw per-run results (confusion matrices, configs, metrics for every run) are in `trustflaas_raw_results.zip`, attached to the release (link: *add*).
+The raw per-run results (confusion matrices, configs, metrics for every run) are in `trustflaas_raw_results.zip`, attached to the release (link: https://github.com/reuben-w/TrustFLaaS/releases/tag/1.0).
 
 ## Setup
 
