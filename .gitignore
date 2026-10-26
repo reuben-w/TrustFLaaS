@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.npz
+*.zip
+*.pt
+*.pth
+data/
+PAMAP2_Dataset/
+final_results/
+*_results/
+venv/
+.venv/
+.idea/
+.vscode/
